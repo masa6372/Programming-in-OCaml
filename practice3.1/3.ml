@@ -3,3 +3,8 @@
 let f x = int_of_float ( ( x +. x *. 0.5 ) /. 114.32 )
 
 let g x = (string_of_float x)^ "dollars are "^ (string_of_int(f x))^ "yen"
+
+(*combined one*)
+let g x =
+        let f x = int_of_float ( ( x +. x *. 0.5 ) /. 114.32 ) in
+        (string_of_float x)^ "dollars are "^ (string_of_int(f x))^ "yen"
