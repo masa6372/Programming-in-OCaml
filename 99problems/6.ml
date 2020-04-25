@@ -9,4 +9,4 @@ let is_palindrome l =
 	
 	
 let is_palindrome list =	
-list = List.rev list 
+	list = List.rev list 
