@@ -6,4 +6,7 @@ let is_palindrome l =
 		| x::rest -> f rest (x::l2)
 	in f l []
 	in l = rev l
-	 
+	
+	
+let is_palindrome list =	
+list = List.rev list 
